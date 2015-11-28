@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0-*",
+  "description": "The Model part of the project",
+  "authors": [ "Dennis" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "frameworks": {
+    "dnxcore50": {
+      "dependencies": {
+        "System.Console": "4.0.0-beta-23427"
+      }
+    }
+  }
+}
