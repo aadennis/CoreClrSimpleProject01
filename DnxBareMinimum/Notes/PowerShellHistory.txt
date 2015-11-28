@@ -1,0 +1,43 @@
+Clear-History
+Clear-Host
+dnx -p .\src\ConsoleApp2\project.json ConsoleApp2
+dnu restore
+dnx -p .\src\project.json ConsoleApp2
+dnx -p .\src\project.json src
+cd .\src
+dnx -p project.json src
+dnvm
+dnvm version
+dnx version
+dnx
+dnx --version
+dnx --watch
+dnx -p project.json --watch
+dnx -h
+cd ..
+dr
+dir
+cd .\DnxBareMinimum
+Get-History
+dnx -p .\Caller\project.json Caller
+dnx -p .\Caller\project.json Callee
+
+dnx -p .\Caller\project.json Caller --debug
+dnx -p .\UnitTest\project.json
+dnx -p .\UnitTest\project.json test
+dnvm upgrade
+dnvm install
+dnvm list
+dnvm install latest -r coreclr -u -a coreclr-latest
+dnvm install latest -r coreclr
+dnvm alias
+dnu build
+
+$a = Get-History
+$a
+$a.Count
+$a | % { $_ }
+$a | % { $_.substring(5) }
+$a[25]
+Get-History | % { $_.CommandLine }
+Get-History | % { $_.CommandLine } | select -Unique
