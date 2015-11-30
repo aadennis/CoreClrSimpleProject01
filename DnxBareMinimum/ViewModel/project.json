@@ -1,20 +1,22 @@
 {
   "version": "1.0.0-*",
   "description": "The ViewModel part of the project",
-  "authors": [ "Dennis" ],
-  "tags": [ "" ],
+  "authors": [
+    "Dennis"
+  ],
+  "tags": [
+    ""
+  ],
   "projectUrl": "",
   "licenseUrl": "",
-  
   "dependencies": {
-    "Model" : ""
+    "Model": ""
   },
-
   "frameworks": {
     "dnxcore50": {
       "dependencies": {
-        "System.Console": "4.0.0-beta-23427"
-      }
+        "System.ObjectModel": "4.0.11-beta-23516"
+       }
     }
   }
 }
