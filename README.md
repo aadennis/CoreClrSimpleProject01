@@ -6,3 +6,10 @@ This tracks my journey in trying to use the CoreClr and Visual Studio Code to do
 
 dnvm install latest -r coreclr
 
+dnvm list
+
+
+## Useful DNX commands
+
+dnx -p .\UnitTest test
+
