@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 
-namespace Model {
+namespace Dennis.ComposerApp.Model {
+
 	
 	public class Composer {
 		public int Id { get; set; }

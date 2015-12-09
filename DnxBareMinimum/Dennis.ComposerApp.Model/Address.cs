@@ -1,4 +1,4 @@
-namespace Model
+namespace Dennis.ComposerApp.Model
 {
 	public class Address {
         public bool Is { get; set; }

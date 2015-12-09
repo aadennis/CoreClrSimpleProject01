@@ -1,13 +1,13 @@
 using Xunit;
 using System;
 using ViewModel;
-using Model;
+using Model = Dennis.ComposerApp.Model;
 
 namespace ComposerTests
 {
     public class ComposerComplexPropertyTests {
         
-        Composer _Composer;
+        Model.Composer _Composer;
         
         public ComposerComplexPropertyTests() {
             TestInitialize();
@@ -16,7 +16,7 @@ namespace ComposerTests
         [Fact]
         public void WrapperSetsLifeDatesInModel() {
             var composerWrapper = new ComposerWrapper(_Composer);
-            composerWrapper.composer.LifeDates = new LifeSpan{DateOfBirth = new DateTime(1688,4,4), DateOfDeath = new DateTime(1722,5,5)};
+            composerWrapper.composer.LifeDates = new Model.LifeSpan{DateOfBirth = new DateTime(1688,4,4), DateOfDeath = new DateTime(1722,5,5)};
              Assert.Equal(composerWrapper.composer.LifeDates, _Composer.LifeDates);
              Assert.Equal(_Composer.LifeDates.DateOfBirth, new DateTime(1688,4,4));
              Assert.Equal(_Composer.LifeDates.DateOfDeath, new DateTime(1722,5,5));
@@ -52,7 +52,7 @@ namespace ComposerTests
         
         
         private void TestInitialize() {
-             _Composer = new Model.Composer{FirstName = "Tom", LastName = "Edwards", LifeDates = new LifeSpan{DateOfBirth = new DateTime(1688,12,4), DateOfDeath = new DateTime(1722,1,18)}};
+             _Composer = new Model.Composer{FirstName = "Tom", LastName = "Edwards", LifeDates = new Model.LifeSpan{DateOfBirth = new DateTime(1688,12,4), DateOfDeath = new DateTime(1722,1,18)}};
         }
     }
 }

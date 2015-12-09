@@ -1,5 +1,5 @@
 using System;
-using Model;
+using Model = Dennis.ComposerApp.Model;
 
 namespace ViewModel
 {
@@ -18,16 +18,16 @@ namespace ViewModel
 			set { _composer.LastName = value;}
 		}
 		
-        private Composer _composer;
+        private Model.Composer _composer;
 		
-		public ComposerWrapper(Composer composer) {
+		public ComposerWrapper(Model.Composer composer) {
 			if (composer == null) {
 				throw new ArgumentNullException("composer must not be null");
 			}
 			_composer = composer;
 		}
 		
-		public Composer composer {
+		public Model.Composer composer {
 			get {
 				return _composer;
 			}

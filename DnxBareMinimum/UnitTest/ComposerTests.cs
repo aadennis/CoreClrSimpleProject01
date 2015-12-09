@@ -1,13 +1,13 @@
 using Xunit;
 using System;
 using ViewModel;
-using Model;
+using Model = Dennis.ComposerApp.Model;
 
 namespace ComposerTests
 {
     public class ComposerTests {
         
-        Composer _Composer;
+        Model.Composer _Composer;
         
         public ComposerTests() {
             TestInitialize();

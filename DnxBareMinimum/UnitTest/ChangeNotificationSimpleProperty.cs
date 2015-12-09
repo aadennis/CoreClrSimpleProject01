@@ -1,4 +1,4 @@
-using Model;
+using Model = Dennis.ComposerApp.Model;
 using Xunit;
 
 namespace UnitTests {
@@ -18,7 +18,7 @@ namespace UnitTests {
 
 
 		private void TestInitialize() {
-				_address = new Address{Line1 = "60 Acacia Avenue", Line2 = "Tottenham"};
+				_address = new Model.Address{Line1 = "60 Acacia Avenue", Line2 = "Tottenham"};
 			
 		}
 	}

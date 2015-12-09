@@ -41,3 +41,4 @@ $a | % { $_.substring(5) }
 $a[25]
 Get-History | % { $_.CommandLine }
 Get-History | % { $_.CommandLine } | select -Unique
+cd C:\Users\Dennis\Documents\GitHub\CoreClrSimpleProject01\DnxBareMinimum

@@ -1,6 +1,6 @@
 using System;
 
-namespace Model {
+namespace Dennis.ComposerApp.Model {
 	
 	public class Song {
 		public int Id { get; set; }

@@ -1,6 +1,6 @@
 using System;
 
-namespace Model {
+namespace Dennis.ComposerApp.Model {
 	
 	public class LifeSpan {
 		public DateTime DateOfBirth  { get; set; }

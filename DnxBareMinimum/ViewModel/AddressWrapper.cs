@@ -1,20 +1,20 @@
 using System;
-using Model;
+using Model = Dennis.ComposerApp.Model;
 
 namespace ViewModel
 {
 	public class AddressWrapper {
 		
-		private Address _address;
+		private Model.Address _address;
 		
-		public AddressWrapper(Address address) {
+		public AddressWrapper(Model.Address address) {
 			if (address == null) {
 				throw new ArgumentNullException("Address must not be null");
 			}
 			_address = address;
 		}
 		
-		public Address address {
+		public Model.Address address {
 			get {
 				return _address;
 			}

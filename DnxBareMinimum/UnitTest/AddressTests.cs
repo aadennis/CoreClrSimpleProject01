@@ -1,12 +1,12 @@
 using Xunit;
 using System;
 using ViewModel;
-using Model;
+using Model = Dennis.ComposerApp.Model;
 
 namespace ComposerTests
 {
     public class AddressTests {
-        
+
         Model.Address _address;
         
         public AddressTests() {
@@ -43,7 +43,7 @@ namespace ComposerTests
         }
         
         private void TestInitialize() {
-             _address = new Address{Line1 = "60 Acacia Avenue", Line2 = "Tottenham"};
+             _address = new Model.Address{Line1 = "60 Acacia Avenue", Line2 = "Tottenham"};
         }
     }
 }

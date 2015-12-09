@@ -3,7 +3,7 @@
   "version": 2,
   "targets": {
     "DNXCore,Version=v5.0": {
-      "Model/1.0.0": {
+      "Dennis.ComposerApp.Model/1.0.0": {
         "type": "project",
         "framework": "DNXCore,Version=v5.0",
         "dependencies": {
@@ -169,7 +169,7 @@
       }
     },
     "DNXCore,Version=v5.0/win7-x86": {
-      "Model/1.0.0": {
+      "Dennis.ComposerApp.Model/1.0.0": {
         "type": "project",
         "framework": "DNXCore,Version=v5.0",
         "dependencies": {
@@ -422,7 +422,7 @@
       }
     },
     "DNXCore,Version=v5.0/win7-x64": {
-      "Model/1.0.0": {
+      "Dennis.ComposerApp.Model/1.0.0": {
         "type": "project",
         "framework": "DNXCore,Version=v5.0",
         "dependencies": {
@@ -676,9 +676,9 @@
     }
   },
   "libraries": {
-    "Model/1.0.0": {
+    "Dennis.ComposerApp.Model/1.0.0": {
       "type": "project",
-      "path": "../Model/project.json"
+      "path": "../Dennis.ComposerApp.Model/project.json"
     },
     "runtime.win7.System.Console/4.0.0-beta-23427": {
       "type": "package",
@@ -1526,7 +1526,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Model "
+      "Dennis.ComposerApp.Model "
     ],
     "DNXCore,Version=v5.0": [
       "System.ObjectModel >= 4.0.11-beta-23516"
